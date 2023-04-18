@@ -18,6 +18,7 @@ img {
   --CARD-BGCOLOR: hsl(225, 100%, 98%);
   --TEXT-COLOR: hsl(224, 23%, 55%);
   --HEADING-COLOR: hsl(223, 47%, 23%);
+  --HOVER-COLOR:hsl(245, 75%, 65%);
   --FS: 18px;
 }
 
@@ -99,6 +100,11 @@ h1 {
   font-weight: 700;
 }
 
+.plans a:hover {
+  color:var(--HOVER-COLOR);
+  text-decoration: none;
+}
+
 .proceed {
   padding: 0.8rem 0;
   font-weight: 700;
@@ -107,12 +113,18 @@ h1 {
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -4px hsl(245, 75%, 85%);
+  cursor: pointer;
+}
+
+.proceed:hover {
+  background-color:var(--HOVER-COLOR);
 }
 
 .cancel {
   color: var(--TEXT-COLOR);
   font-weight: 900;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 /* || FOOTER */
@@ -135,6 +147,7 @@ h1 {
   }
 }
 
+/* || SMALL*/
 @media screen and (max-width: 375px) {
   .plans {
     padding: 1.5rem 0.5rem;
